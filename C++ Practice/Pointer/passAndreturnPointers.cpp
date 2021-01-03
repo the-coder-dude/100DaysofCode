@@ -37,4 +37,33 @@ int main()
 
 // Passing Structure
 
-struct 
+struct employee
+{
+    char name[4];
+    int age;
+    float weight;
+
+};
+
+void fun(struct employee);
+
+int main()
+{
+    struct employee e = {"abc", 20, 55.5};
+    struct employee *ptr = &e;
+    fun(ptr);
+
+    return 0;
+
+}
+
+
+void fun(struct employee *obj)
+{
+    printf("name = %s\n", obj -> name);
+    printf("age = %s\n", obj -> age);
+    printf("weight = %s\n", obj -> weight);
+
+
+
+}
