@@ -1,37 +1,36 @@
-#include<iostream>
-#include<stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int checkstring(char *t){
- if(*t==NULL){
-  return 1;
- }
- char *c=t;
- if(*t=='a'){
-  if(*(c+1)=='a'){
-   
-  return checkstring(t+1);
-  }
-  else if(*(c+1)=='b'){
-   return checkstring(t+1);
-  }
-  if(*(c+1)==NULL){
-   
-   return 1;
-  }
-  else{
-   return 0;
-  }
+if(*t==NULL){
+     return 1;
+    }
+    char *c=t;
+    if(*t=='a'){
+     if(*(c+1)=='a'){
+      
+     return checkstring(t+1);
+     }
+     else if(*(c+1)=='b'){
+      return checkstring(t+1);
+     }
+     if(*(c+1)==NULL){
+      
+      return 1;
+     }
+     else{
+      return 0;
+     }
  }
  else if(*t=='b'){
-  if(*(c+1)=='b'&&*(c+2)=='a'){
-   return checkstring(t+2);
-  }
-  else if(*(c+1)=='b'&&*(c+2)==NULL){
-   return 1;
-  }
-  else{
-   return 0;
+    if(*(c+1)=='b'&&*(c+2)=='a'){
+     return checkstring(t+2);
+    }
+    else if(*(c+1)=='b'&&*(c+2)==NULL){
+     return 1;
+    }
+    else{
+     return 0;
   }
   
  }
