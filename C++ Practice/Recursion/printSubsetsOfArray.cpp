@@ -1,4 +1,5 @@
-#include <stdio.h> 
+#include <iostream>
+using namespace std; 
 
 void combinationUtil(int arr[], int n, int r, int index, int data[], int i); 
 
