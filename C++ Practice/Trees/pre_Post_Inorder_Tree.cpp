@@ -56,13 +56,13 @@ int main()
 	root->left->left	 = new Node(4); 
 	root->left->right = new Node(5); 
 
-	cout << "\nPreorder traversal of binary tree is \n"; 
+	cout << "\nPreorder traversal \n"; 
 	printPreorder(root); 
 
-	cout << "\nInorder traversal of binary tree is \n"; 
+	cout << "\nInorder traversal \n"; 
 	printInorder(root); 
 
-	cout << "\nPostorder traversal of binary tree is \n"; 
+	cout << "\nPostorder traversal \n"; 
 	printPostorder(root); 
 
 	return 0; 
